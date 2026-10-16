@@ -1,0 +1,15 @@
+RewriteEngine On
+# Folders without a trailing slash: redirect to https with the slash
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*[^/])$ https://%{HTTP_HOST}/$1/ [R=301,L]
+
+DirectoryIndex index.html
+ErrorDocument 404 /index.html
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+</IfModule>
+<FilesMatch "^_">
+    Require all denied
+</FilesMatch>
