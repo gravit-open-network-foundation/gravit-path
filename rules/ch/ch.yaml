@@ -1,0 +1,39 @@
+# Switzerland. Retrieved 2026-10-16.
+- id: CH-GMBH-001
+  form: GmbH
+  statement: Minimum share capital (Stammkapital) is CHF 20,000, contributed in cash or in kind (Art. 773 OR).
+  source: https://www.kmu.admin.ch/de/gmbh-haftung-stammkapital-gruendung
+  status: verified
+- id: CH-GMBH-002
+  form: GmbH
+  statement: Founding requires a public deed before a notary, which adopts the articles and appoints the managers and, if required, the auditor.
+  source: https://www.kmu.admin.ch/de/gmbh-haftung-stammkapital-gruendung
+  status: verified
+- id: CH-GMBH-003
+  form: GmbH
+  statement: The GmbH comes into existence only with its entry in the commercial register.
+  quote: "Eine GmbH entsteht mit dem Eintrag ins Handelsregister."
+  source: https://www.kmu.admin.ch/de/gmbh-haftung-stammkapital-gruendung
+  status: verified
+- id: CH-GMBH-004
+  form: GmbH
+  statement: At least one person resident in Switzerland must be able to represent the company (Art. 814 Abs. 3 OR).
+  source: https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de#art_814
+  status: needs_review
+  note: Expected from the Code of Obligations; not yet confirmed from the official text in this pack.
+- id: CH-VEREIN-001
+  form: Verein
+  statement: Written statutes must state the purpose, the resources and the organisation of the association (Art. 60 Abs. 2 ZGB); the founding minutes record the founding, the adoption of the statutes and the election of the board.
+  source: https://www.hra.dij.be.ch/content/dam/hra_dij/dokumente/de/merkblätter/HRA_Merkblatt_Neueintragung_Verein_de.pdf
+  status: verified
+- id: CH-VEREIN-002
+  form: Verein
+  statement: Entry in the commercial register is optional, but required if the association runs a commercial business, is subject to audit, or mainly collects or distributes assets abroad for charitable, religious, cultural, educational or social purposes (Art. 61 Abs. 2 ZGB, Art. 90 HRegV).
+  quote: "Vereine müssen sich grundsätzlich nicht in das Handelsregister eintragen lassen."
+  source: https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/wirtschaft-arbeit/handelsregister/verein/verein_merkblatt_eintragungspflicht.pdf
+  status: verified
+- id: CH-EASYGOV-001
+  form: all
+  statement: EasyGov.swiss, the federal online counter, founds sole proprietorships and general and limited partnerships online; for GmbH and AG the service is limited and prepares a mandate to a notary.
+  source: https://www.kmu.admin.ch/kmu/de/home/praktisches-wissen/kmu-gruenden/firmengruendung/handelsregister/anmeldung-im-hr.html
+  status: verified

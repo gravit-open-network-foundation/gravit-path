@@ -1,0 +1,61 @@
+# United Kingdom (England and Wales unless stated). Retrieved 2026-10-16.
+# status: verified = stated on the official page quoted; secondary = from non-official sources, confirm before use;
+#         needs_review = expected but not yet confirmed from an official source.
+- id: UK-LTD-001
+  form: private limited company
+  statement: A company must appoint at least one director; a company secretary is not required.
+  quote: "You must appoint a director but you do not have to appoint a company secretary."
+  source: https://www.gov.uk/limited-company-formation
+  status: verified
+- id: UK-LTD-002
+  form: private limited company (by shares)
+  statement: At least one shareholder is needed, and the shareholder can be a director.
+  quote: "You need at least one shareholder, who can be a director."
+  source: https://www.gov.uk/limited-company-formation
+  status: verified
+- id: UK-LTD-003
+  form: private limited company
+  statement: People with significant control (for example more than 25 % of shares or voting rights) must be identified and confirmed at registration.
+  source: https://www.gov.uk/limited-company-formation
+  status: verified
+- id: UK-LTD-004
+  form: private limited company
+  statement: An official registered office address and a SIC code describing the activity are required.
+  source: https://www.gov.uk/limited-company-formation
+  status: verified
+- id: UK-LTD-005
+  form: private limited company
+  statement: Memorandum of association, articles of association and a statement of capital (or of guarantee) are prepared at registration.
+  source: https://www.gov.uk/limited-company-formation
+  status: verified
+- id: UK-LTD-006
+  form: private limited company
+  statement: The online incorporation fee is 100 GBP from 1 February 2026 (was 50 GBP).
+  source: https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees
+  status: secondary
+  note: Figure agreed by several formation agents; the official fees page was not read in full. Confirm before quoting a price.
+- id: UK-ID-001
+  form: all companies
+  statement: Identity verification of directors and people with significant control is a legal requirement from 18 November 2025, with a 12-month transition; it can be done with GOV.UK One Login, at the Post Office, by bank details (UK residents) or through an Authorised Corporate Service Provider.
+  quote: "From 18 November 2025, identity verification becomes a legal requirement."
+  source: https://www.gov.uk/guidance/verify-your-identity-for-companies-house
+  status: verified
+- id: UK-AML-001
+  form: service providers
+  statement: A business that forms companies for others is a trust or company service provider and must register with HMRC (unless supervised by another AML body) before it starts trading.
+  quote: "You must not run your business until HMRC has confirmed that your application has been successful."
+  source: https://www.gov.uk/guidance/money-laundering-regulations-trust-or-company-service-provider-registration
+  status: verified
+  applies_to_gravit_path: true
+- id: UK-UA-001
+  form: unincorporated association (club)
+  statement: No registration is needed and setting one up costs nothing; members are personally liable for debts and contracts; profits from trading or investments are subject to Corporation Tax.
+  quote: "You do not need to register an unincorporated association, and it does not cost anything to set one up."
+  source: https://www.gov.uk/unincorporated-associations
+  status: verified
+- id: UK-CHAR-001
+  form: charity / CIO
+  statement: A charity must register if its income is at least 5,000 GBP a year; a charitable incorporated organisation (CIO) must register whatever its income; most charities need at least 3 trustees and purposes for the public benefit. Scotland and Northern Ireland have different rules.
+  quote: "its income will be at least £5,000 per year"
+  source: https://www.gov.uk/setting-up-charity
+  status: verified

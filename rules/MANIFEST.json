@@ -1,0 +1,12 @@
+{
+ "rules/ch/ch.yaml": {
+  "rules": 7,
+  "sha256": "220c26fe5c7a582fc5b164bcc13ad2e6f6af73d75da569e5b76ccea24f743821",
+  "verified": 6
+ },
+ "rules/uk/uk.yaml": {
+  "rules": 10,
+  "sha256": "fb2434a88c498686ff24e32b9f3fbf1e8c823cce90d08d24e8970f4a55c2d16d",
+  "verified": 9
+ }
+}

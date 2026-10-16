@@ -1,0 +1,13 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install pyyaml pytest
+      - run: python tools/check_rules.py && pytest -q
+      - name: Site is built from the current rules
+        run: python tools/build_site.py && git diff --exit-code site/
