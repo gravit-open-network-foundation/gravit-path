@@ -1,4 +1,4 @@
-# Behaviour tests for the Gravit Path agent (from the ChatGPT QA suite, adapted to CANON.md).
+# Behaviour tests for the Gravit Path agent, adapted to CANON.md.
 # Each case: the question, what the answer must do, and what it must never do.
 # "rules" lists rule ids the answer should cite when it states a legal fact.
 common_must: [label every step mandatory / optional / not required now, cite a rule id with its source for every legal fact, say "ask a professional" where no verified rule exists]
