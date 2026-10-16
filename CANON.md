@@ -20,9 +20,9 @@ It returns to the person the ability to act among them.
 - experienced founders who want to restructure an existing business correctly.
 
 **Patterns we build on**, known from inside:
-- UK formation services (1st Formations; founders from Companies House): the funnel and the standard processes;
-- IT-offshores.com: work with non-standard clients;
-- the Swiss online counter EasyGov.swiss: an identity-first state process.
+- established UK formation services: a clear funnel and standard processes;
+- international formation agents: work with clients whose situation is not standard;
+- the Swiss federal online counter EasyGov.swiss: an identity-first state process, drafts saved in the account.
 
 ## 2. The six principles
 1. **Constraint first.** First say where the person can NOT go now, then where they can. This removes most false hopes.
@@ -98,5 +98,5 @@ A country is ready when all seven blocks have verified rules and the QA cases fo
 
 ## 11. Next steps
 1. A prototype agent that answers only from the rule packs, with links and the label "verified" or "ask a professional".
-2. Five to ten real cases from Dr. Konviser's experience, added to `qa/cases.yaml` next to the 23 behaviour tests.
+2. Five to ten real cases from the founders' experience, added to `qa/cases.yaml` next to the 23 behaviour tests.
 3. Review of the *secondary* and *needs review* rules against the official texts.
