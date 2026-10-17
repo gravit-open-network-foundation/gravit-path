@@ -14,7 +14,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-OFFICIAL = ("gov.uk", "admin.ch", "fedlex.admin.ch", "zh.ch", "be.ch", "sg.ch", "legislation.gov.uk")
+OFFICIAL = ("gov.uk", "admin.ch", "fedlex.admin.ch", "zh.ch", "be.ch", "sg.ch", "legislation.gov.uk", "gesetze.li", "llv.li")
 STATUSES = {"verified", "secondary", "needs_review"}
 REQUIRED = ("id", "form", "statement", "source", "status")
 

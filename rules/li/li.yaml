@@ -1,0 +1,56 @@
+# Liechtenstein. Retrieved 2026-10-17. Law text: Personen- und Gesellschaftsrecht (PGR), LGBl. 1926.004,
+# consolidated version of 01.09.2026, official portal gesetze.li.
+- id: LI-CAP-001
+  form: AG, GmbH, Anstalt and other legal persons
+  statement: Minimum capital is CHF 50,000 for an Aktiengesellschaft and other entities whose capital is divided into shares, CHF 10,000 for a GmbH, and CHF 30,000 for entities whose capital is not divided into shares, such as an Anstalt; the same amounts may be in euro or US dollars, and the capital must be fully paid in (Art. 122 PGR).
+  quote: "bei der Gesellschaft mit beschränkter Haftung mindestens 10 000 Franken"
+  source: https://www.gesetze.li/konso/1926004000
+  status: verified
+- id: LI-STIFT-001
+  form: Stiftung (foundation)
+  statement: The minimum capital of a foundation is CHF 30,000, or EUR 30,000 or USD 30,000 (Art. 552 § 13 PGR).
+  quote: "Das Mindestkapital der Stiftung beträgt 30 000 Franken."
+  source: https://www.gesetze.li/konso/1926004000
+  status: verified
+- id: LI-TREU-001
+  form: Treuunternehmen (trust enterprise)
+  statement: The trust fund of a trust enterprise must be worth at least CHF 30,000 (Art. 932a § 22 PGR).
+  quote: "Der Wert des Treufonds muss mindestens 30 000 Franken betragen."
+  source: https://www.gesetze.li/konso/1926004000
+  status: verified
+- id: LI-180A-001
+  form: all legal persons
+  statement: At least one board member with authority to manage and represent must be a national of an EEA state (or an equated person) or a legal person, and hold a licence under the Trustee Act or the Art. 180a supervision act; legal persons that must have a manager under the Trade Act or another special law are exempt, but foundations under foundation supervision are not (Art. 180a PGR).
+  quote: "muss ein Staatsangehöriger einer Vertragspartei des Abkommens über den Europäischen Wirtschaftsraum"
+  source: https://www.gesetze.li/konso/1926004000
+  status: verified
+- id: LI-VEREIN-001
+  form: Verein (association)
+  statement: An association with a non-commercial purpose acquires legal personality as soon as its written statutes show the will to exist as a corporate body; the statutes must state its purpose, resources and organisation (Art. 246 PGR).
+  quote: "Die Statuten müssen in schriftlicher Form errichtet sein"
+  source: https://www.gesetze.li/konso/1926004000
+  status: verified
+- id: LI-VEREIN-002
+  form: Verein (association)
+  statement: Registration in the commercial register is optional, but required if the association runs a commercially managed business, is subject to audit, or mainly collects or distributes assets for charitable purposes; the Office of Justice can exempt the last group when the risk of terrorist financing is low (Art. 247 PGR).
+  quote: "Der Verein ist zur Eintragung verpflichtet, wenn er"
+  source: https://www.gesetze.li/konso/1926004000
+  status: verified
+- id: LI-GEN-001
+  form: kleine Genossenschaft (small cooperative)
+  statement: The PGR provides for small cooperatives with a limited local or material scope (Art. 483 PGR); the Liechtenstein Venture Cooperative (LVC) for start-ups is built on this form, with no minimum capital.
+  source: https://www.gesetze.li/konso/1926004000
+  status: secondary
+  note: Art. 483 confirmed in the law text; the LVC features (no minimum capital, liability limited to the cooperative's assets) come from law firm publications and must be confirmed.
+- id: LI-REG-001
+  form: all
+  statement: The commercial register is kept by the Office of Justice (Amt für Justiz); trade licences are issued by the Office of Economic Affairs (Amt für Volkswirtschaft).
+  source: https://www.llv.li
+  status: secondary
+  note: From secondary summaries; confirm on the government portal llv.li.
+- id: LI-EINZEL-001
+  form: Einzelunternehmen (sole proprietorship)
+  statement: A sole proprietorship running a commercial business must register; registration is optional while annual turnover stays below CHF 300,000, except for financial services, insurance, brokerage and consulting.
+  source: https://www.llv.li
+  status: needs_review
+  note: Threshold reported by a German trade agency summary; not yet confirmed in the Handelsregisterverordnung.
