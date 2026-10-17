@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Правила Gravit Path: у кожного правила джерело</title>
+<meta name="description" content="Набори правил, на яких працює Gravit Path: у кожного правила офіційне джерело, цитата і статус.">
+<meta property="og:title" content="Gravit Path">
+<meta property="og:image" content="https://www.gravit.space/assets/img/og.webp">
+<link rel="icon" type="image/png" sizes="512x512" href="https://gravit.space/android-chrome-512x512.png">
+<link rel="stylesheet" href="../../css/site.css">
+<style>
+.gv{--card:rgba(4,16,38,.72);--line:rgba(100,180,255,.18);--muted:rgba(200,225,255,.66);--glow:#00aaff;--glow-soft:rgba(0,170,255,.12);
+--ok:#5eead4;--warn:#fcd34d;--bad:#fca5a5;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+width:100%;max-width:1136px;font-size:17px;line-height:1.6;color:var(--text)}
+.gv a{color:var(--glow);text-underline-offset:3px}
+.gv h1,.gv h2,.gv h3{font-weight:700}
+.gv ul{padding-left:18px}
+.gv section:first-of-type{border-top:0}
+.gv a{color:var(--glow);text-underline-offset:3px}
+.gv .hero{padding:72px 0 56px;display:grid;grid-template-columns:1.2fr .9fr;gap:40px;align-items:center}
+@media(max-width:860px){.gv .hero{grid-template-columns:1fr;padding-top:44px}}
+.gv .kicker{font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--glow);margin:0 0 14px}
+.gv h1{font-size:clamp(34px,5.6vw,56px);line-height:1.06;letter-spacing:-.025em;margin:0 0 20px}
+.gv h1 em{font-style:normal;color:var(--glow)}
+.gv .lead{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:600px}
+.gv .btns{display:flex;gap:12px;flex-wrap:wrap}
+.gv .btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:650;font-size:15px;text-decoration:none}
+.gv .btn1{background:var(--glow);color:#00122a}
+.gv .btn1:hover{background:#4cc6ff}
+.gv .btn2{border:1.5px solid var(--line);color:var(--text)}
+.gv .btn2:hover{border-color:var(--glow)}
+.gv .states{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 0 60px var(--glow-soft)}
+.gv .state{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 4px;border-bottom:1px solid var(--line);font-size:15px}
+.gv .state:last-of-type{border-bottom:0}
+.gv .state b{font-weight:650}
+.gv .tag{font:700 11.5px var(--mono);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.gv .t-ok{background:rgba(94,234,212,.14);color:var(--ok)}
+.gv .t-warn{background:rgba(252,211,77,.14);color:var(--warn)}
+.gv .t-bad{background:rgba(252,165,165,.14);color:var(--bad)}
+.gv .t-plan{background:rgba(0,170,255,.14);color:var(--glow)}
+.gv .states p{margin:10px 4px 0;font-size:13.5px;color:var(--muted)}
+.gv section{padding:56px 0;border-top:1px solid var(--line)}
+.gv h2{font-size:clamp(26px,3.6vw,36px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.gv h3{font-size:18px;margin:0 0 8px}
+.gv p{margin:0 0 14px}
+.gv .muted{color:var(--muted)}
+.gv .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+@media(max-width:860px){.gv .grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.gv .grid{grid-template-columns:1fr}}
+.gv .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.gv .card p{color:var(--muted);font-size:15px;margin:0}
+.gv .card .rule{font:600 12px var(--mono);color:var(--glow);display:block;margin-bottom:6px}
+.gv pre{background:#000a18;border:1px solid var(--line);color:#cfe9ff;border-radius:14px;padding:14px 16px;overflow-x:auto;font:13.5px/1.55 var(--mono);margin:0 0 14px}
+.gv code{font-family:var(--mono);font-size:.9em}
+.gv table{width:100%;border-collapse:collapse;font-size:15px}
+.gv th,.gv td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.gv th{color:var(--muted);font-weight:600;font-size:13px}
+.gv .tablewrap{overflow-x:auto}
+.gv .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+@media(max-width:860px){.gv .plans{grid-template-columns:1fr}}
+.gv .plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;position:relative}
+.gv .plan .price{font-size:34px;font-weight:750;letter-spacing:-.02em;margin:6px 0 2px}
+.gv .plan .price small{font-size:15px;color:var(--muted);font-weight:400}
+.gv .plan ul{margin:14px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+.gv .plan li{margin:5px 0}
+.gv .plan .tag{position:absolute;top:18px;right:18px}
+.gv .notice{border-left:4px solid var(--warn);background:rgba(252,211,77,.07);padding:14px 18px;border-radius:10px;margin:18px 0 0}
+.gv .correction{border-left:4px solid var(--glow);background:var(--glow-soft);padding:14px 18px;border-radius:10px;margin:14px 0}
+.gv .wl{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;max-width:760px;margin-top:8px}
+.gv .wl-field{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)}
+.gv .wl input[type=email],.gv .wl select{background:rgba(0,10,24,.8);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:12px 14px;font:inherit;font-size:16px}
+.gv .wl input:focus,.gv .wl select:focus{outline:2px solid var(--glow);outline-offset:1px}
+.gv .wl-consent{grid-column:1/-1;font-size:14px;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
+.gv .wl-consent input{margin-top:4px}
+.gv .wl button{grid-column:1/-1;justify-self:start;border:0;cursor:pointer;font:inherit;font-weight:650}
+.gv .wl-hp{position:absolute;left:-9999px}
+.gv .wl-ok{color:var(--ok);font-weight:600}.gv .wl-err{color:var(--bad);font-weight:600}
+@media(max-width:640px){.gv .wl{grid-template-columns:1fr}}
+
+nav li{white-space:nowrap}
+.gv .agora-line{font-size:var(--word-size,19.4px);line-height:1.5;font-weight:600;color:#fff;max-width:820px;margin:26px 0 0}
+.gv .agora-line a{color:var(--glow);text-decoration:none}.gv .agora-line a:hover{text-decoration:underline}
+.gv .agora-line em{font-style:normal;color:var(--glow)}
+
+/* ─── GRAVIT FAMILY (same strip on every Gravit site) ─── */
+.family { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px 20px; margin: 0 0 18px;
+  font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
+.family a { color: var(--muted); text-decoration: none; }
+.family a:hover, .family a[aria-current] { color: #fff; }
+.family-label { color: #4fc3f7; }
+</style>
+<link rel="alternate" hreflang="en" href="https://gravitpath.world/rules/"><link rel="alternate" hreflang="es" href="https://gravitpath.world/es/rules/"><link rel="alternate" hreflang="pt" href="https://gravitpath.world/pt/rules/"><link rel="alternate" hreflang="zh-Hans" href="https://gravitpath.world/zh/rules/"><link rel="alternate" hreflang="uk" href="https://gravitpath.world/uk/rules/"><link rel="alternate" hreflang="ru" href="https://gravitpath.world/ru/rules/"><link rel="alternate" hreflang="x-default" href="https://gravitpath.world/rules/">
+</head>
+<body>
+<!-- Orbital background -->
+<div class="orbital-bg" aria-hidden="true">
+  <svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="cg" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#1a90ff" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#0040a0" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <!-- glow center -->
+    <ellipse cx="450" cy="450" rx="90" ry="90" fill="url(#cg)" opacity="0.5"/>
+    <!-- orbital petals, 18 ellipses rotated -->
+    <g stroke="#3a9fff" stroke-width="0.8" fill="none" opacity="0.7">
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(0   450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(20  450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(40  450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(60  450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(80  450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(100 450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(120 450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(140 450 450)"/>
+      <ellipse cx="450" cy="450" rx="60" ry="220" transform="rotate(160 450 450)"/>
+    </g>
+    <!-- spark dots -->
+    <g fill="#5bc8ff" opacity="0.85">
+      <circle cx="450" cy="230" r="2.5"/>
+      <circle cx="450" cy="670" r="2.5"/>
+      <circle cx="230" cy="450" r="2.5"/>
+      <circle cx="670" cy="450" r="2.5"/>
+      <circle cx="640" cy="260" r="2"/>
+      <circle cx="260" cy="640" r="2"/>
+      <circle cx="640" cy="640" r="2"/>
+      <circle cx="260" cy="260" r="2"/>
+      <circle cx="548" cy="236" r="1.5"/>
+      <circle cx="352" cy="664" r="1.5"/>
+      <circle cx="664" cy="548" r="1.5"/>
+      <circle cx="236" cy="352" r="1.5"/>
+      <circle cx="330" cy="248" r="1.5"/>
+      <circle cx="570" cy="652" r="1.5"/>
+    </g>
+  </svg>
+</div>
+
+<div class="page">
+  <header>
+    <a class="logo" href="../../uk/" aria-label="Gravit Path">
+    <img class="astra" src="../../img/logo-gon-162.webp" srcset="../../img/logo-gon-162.webp 1x, ../../img/logo-gon-324.webp 2x, ../../img/logo-gon-486.webp 3x" width="108" height="162" alt="" decoding="async" fetchpriority="high" />
+    <span class="logo-word">Gravit Path</span>
+    </a>
+    <nav aria-label="Main"><ul><li><a href="../#how">Як це працює</a></li><li><a href="../#paths">Шляхи</a></li><li><a href="../#countries">Країни</a></li><li><a href="./">Правила</a></li><li><a href="../#principles">Принципи</a></li><li><a href="../#plans">Плани</a></li><li><a href="../#status">Статус</a></li><li class="langs"><a href="../../rules/" onclick="try{localStorage.setItem('gp-lang','en')}catch(e){}">EN</a><a href="../../es/rules/" onclick="try{localStorage.setItem('gp-lang','es')}catch(e){}">ES</a><a href="../../pt/rules/" onclick="try{localStorage.setItem('gp-lang','pt')}catch(e){}">PT</a><a href="../../zh/rules/" onclick="try{localStorage.setItem('gp-lang','zh')}catch(e){}">中文</a><b>УКР</b><a href="../../ru/rules/" onclick="try{localStorage.setItem('gp-lang','ru')}catch(e){}">РУС</a></li></ul></nav>
+  </header>
+  <style>nav li.langs{display:flex;gap:10px;margin-left:8px;padding-left:14px;border-left:1px solid rgba(100,180,255,.25)}
+  nav li.langs a{opacity:.6;text-decoration:none} nav li.langs a:hover{opacity:1} nav li.langs b{color:#4fc3f7}</style>
+  <main><div class="gv">
+
+<div class="hero" style="grid-template-columns:1fr">
+  <div>
+    <p class="kicker">Набори правил · прочитано 16 жовтня 2026</p>
+    <h1>Кожне правило <em>зі своїм джерелом.</em></h1>
+    <p class="lead">Асистент Gravit Path відповідає лише за цими правилами. Перевірені правила цитують офіційне джерело. Правила з іншою позначкою треба підтвердити, перш ніж на них спиратися.</p><div class="notice">Самі правила наведено англійською, мовою офіційних джерел: переклад юридичного твердження може спотворити його зміст.</div>
+  </div>
+</div>
+<section id="ch"><style>.gv td code{white-space:nowrap}</style><h2>Швейцарія</h2><div class="tablewrap"><table><tr><th>Правило</th><th>Форма</th><th>Твердження</th><th>Статус</th></tr><tr><td><code>CH-GMBH-001</code></td><td>GmbH</td><td>Minimum share capital (Stammkapital) is CHF 20,000, contributed in cash or in kind (Art. 773 OR).</td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.kmu.admin.ch/de/gmbh-haftung-stammkapital-gruendung">джерело</a></td></tr><tr><td><code>CH-GMBH-002</code></td><td>GmbH</td><td>Founding requires a public deed before a notary, which adopts the articles and appoints the managers and, if required, the auditor.</td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.kmu.admin.ch/de/gmbh-haftung-stammkapital-gruendung">джерело</a></td></tr><tr><td><code>CH-GMBH-003</code></td><td>GmbH</td><td>The GmbH comes into existence only with its entry in the commercial register.<br><span class="muted" style="font-size:14px">&ldquo;Eine GmbH entsteht mit dem Eintrag ins Handelsregister.&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.kmu.admin.ch/de/gmbh-haftung-stammkapital-gruendung">джерело</a></td></tr><tr><td><code>CH-GMBH-004</code></td><td>GmbH</td><td>At least one person resident in Switzerland must be able to represent the company (Art. 814 Abs. 3 OR).<br><span class="muted" style="font-size:14px">Expected from the Code of Obligations; not yet confirmed from the official text in this pack.</span></td><td><span class="tag t-warn">ПОТРІБНА ПЕРЕВІРКА</span><br><a href="https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de#art_814">джерело</a></td></tr><tr><td><code>CH-VEREIN-001</code></td><td>Verein</td><td>Written statutes must state the purpose, the resources and the organisation of the association (Art. 60 Abs. 2 ZGB); the founding minutes record the founding, the adoption of the statutes and the election of the board.</td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.hra.dij.be.ch/content/dam/hra_dij/dokumente/de/merkblätter/HRA_Merkblatt_Neueintragung_Verein_de.pdf">джерело</a></td></tr><tr><td><code>CH-VEREIN-002</code></td><td>Verein</td><td>Entry in the commercial register is optional, but required if the association runs a commercial business, is subject to audit, or mainly collects or distributes assets abroad for charitable, religious, cultural, educational or social purposes (Art. 61 Abs. 2 ZGB, Art. 90 HRegV).<br><span class="muted" style="font-size:14px">&ldquo;Vereine müssen sich grundsätzlich nicht in das Handelsregister eintragen lassen.&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/wirtschaft-arbeit/handelsregister/verein/verein_merkblatt_eintragungspflicht.pdf">джерело</a></td></tr><tr><td><code>CH-EASYGOV-001</code></td><td>all</td><td>EasyGov.swiss, the federal online counter, founds sole proprietorships and general and limited partnerships online; for GmbH and AG the service is limited and prepares a mandate to a notary.</td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.kmu.admin.ch/kmu/de/home/praktisches-wissen/kmu-gruenden/firmengruendung/handelsregister/anmeldung-im-hr.html">джерело</a></td></tr></table></div></section><section id="uk"><style>.gv td code{white-space:nowrap}</style><h2>Велика Британія</h2><div class="tablewrap"><table><tr><th>Правило</th><th>Форма</th><th>Твердження</th><th>Статус</th></tr><tr><td><code>UK-LTD-001</code></td><td>private limited company</td><td>A company must appoint at least one director; a company secretary is not required.<br><span class="muted" style="font-size:14px">&ldquo;You must appoint a director but you do not have to appoint a company secretary.&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/limited-company-formation">джерело</a></td></tr><tr><td><code>UK-LTD-002</code></td><td>private limited company (by shares)</td><td>At least one shareholder is needed, and the shareholder can be a director.<br><span class="muted" style="font-size:14px">&ldquo;You need at least one shareholder, who can be a director.&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/limited-company-formation">джерело</a></td></tr><tr><td><code>UK-LTD-003</code></td><td>private limited company</td><td>People with significant control (for example more than 25 % of shares or voting rights) must be identified and confirmed at registration.</td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/limited-company-formation">джерело</a></td></tr><tr><td><code>UK-LTD-004</code></td><td>private limited company</td><td>An official registered office address and a SIC code describing the activity are required.</td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/limited-company-formation">джерело</a></td></tr><tr><td><code>UK-LTD-005</code></td><td>private limited company</td><td>Memorandum of association, articles of association and a statement of capital (or of guarantee) are prepared at registration.</td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/limited-company-formation">джерело</a></td></tr><tr><td><code>UK-LTD-006</code></td><td>private limited company</td><td>The online incorporation fee is 100 GBP from 1 February 2026 (was 50 GBP).<br><span class="muted" style="font-size:14px">Figure agreed by several formation agents; the official fees page was not read in full. Confirm before quoting a price.</span></td><td><span class="tag t-warn">ПІДТВЕРДИТИ</span><br><a href="https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees">джерело</a></td></tr><tr><td><code>UK-ID-001</code></td><td>all companies</td><td>Identity verification of directors and people with significant control is a legal requirement from 18 November 2025, with a 12-month transition; it can be done with GOV.UK One Login, at the Post Office, by bank details (UK residents) or through an Authorised Corporate Service Provider.<br><span class="muted" style="font-size:14px">&ldquo;From 18 November 2025, identity verification becomes a legal requirement.&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/guidance/verify-your-identity-for-companies-house">джерело</a></td></tr><tr><td><code>UK-AML-001</code></td><td>service providers</td><td>A business that forms companies for others is a trust or company service provider and must register with HMRC (unless supervised by another AML body) before it starts trading.<br><span class="muted" style="font-size:14px">&ldquo;You must not run your business until HMRC has confirmed that your application has been successful.&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/guidance/money-laundering-regulations-trust-or-company-service-provider-registration">джерело</a></td></tr><tr><td><code>UK-UA-001</code></td><td>unincorporated association (club)</td><td>No registration is needed and setting one up costs nothing; members are personally liable for debts and contracts; profits from trading or investments are subject to Corporation Tax.<br><span class="muted" style="font-size:14px">&ldquo;You do not need to register an unincorporated association, and it does not cost anything to set one up.&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/unincorporated-associations">джерело</a></td></tr><tr><td><code>UK-CHAR-001</code></td><td>charity / CIO</td><td>A charity must register if its income is at least 5,000 GBP a year; a charitable incorporated organisation (CIO) must register whatever its income; most charities need at least 3 trustees and purposes for the public benefit. Scotland and Northern Ireland have different rules.<br><span class="muted" style="font-size:14px">&ldquo;its income will be at least £5,000 per year&rdquo;</span></td><td><span class="tag t-ok">ПЕРЕВІРЕНО</span><br><a href="https://www.gov.uk/setting-up-charity">джерело</a></td></tr></table></div></section>
+<section><h2>Версії</h2><p class="muted">Кожен набір має відбиток, тож у відповіді можна назвати точну версію правил. Вихідні файли лежать на <a href="https://github.com/gravit-open-network-foundation/gravit-path/tree/main/rules">GitHub</a>.</p><ul><li><code>rules/ch/ch.yaml</code> sha256 <code>220c26fe5c7a582f</code></li><li><code>rules/uk/uk.yaml</code> sha256 <code>fb2434a88c498686</code></li></ul></section>
+
+  </div></main>
+
+  <footer>
+    <div class="family" aria-label="Gravit family">
+      <span class="family-label">Gravit family</span>
+      <a href="https://gravit.world">Foundation</a>
+      <a href="https://gravit.space">Network</a>
+      <a href="https://gravitverifier.space">Verifier</a>
+      <a href="../../" aria-current="true">Path</a>
+      <a href="https://github.com/gravit-open-network-foundation">Code</a>
+      <a href="https://datatracker.ietf.org/doc/draft-gravit-gevp/">Standard</a>
+    </div>
+
+    <p class="footer-copy">Gravit Path · © 2026 Gravit Open Network Foundation, Zurich · Apache-2.0 · No tracking on this page</p>
+
+    <div class="footer-socials">
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/company/gravit-open-network" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <!-- Telegram -->
+      <a href="https://t.me/gravitnet" target="_blank" rel="noopener" aria-label="Telegram">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.022c.242-.213-.054-.333-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.954l11.57-4.461c.538-.196 1.006.128.832.941z"/></svg>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/gravit-open-network-foundation" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <!-- X / Twitter -->
+      <a href="https://x.com/gravitopnetwork" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <!-- Crunchbase -->
+      <a href="https://www.crunchbase.com/organization/gravit-open-network" target="_blank" rel="noopener" aria-label="Crunchbase">
+        <svg viewBox="0 0 24 24"><path d="M21.6 0H2.4A2.41 2.41 0 0 0 0 2.4v19.2A2.41 2.41 0 0 0 2.4 24h19.2a2.41 2.41 0 0 0 2.4-2.4V2.4A2.41 2.41 0 0 0 21.6 0zM7.045 14.465A2.11 2.11 0 0 0 9.84 13.42h1.66a3.69 3.69 0 1 1 0-1.75H9.84a2.11 2.11 0 1 0-2.795 2.795zm11.345.845a3.55 3.55 0 0 1-1.06.63 3.68 3.68 0 0 1-3.39-.38v.38h-1.51V5.37h1.5v4.11a3.74 3.74 0 0 1 1.8-.63H16a3.67 3.67 0 0 1 2.39 6.46zm-.223-2.766a2.104 2.104 0 1 1-4.207 0 2.104 2.104 0 0 1 4.207 0z"/></svg>
+      </a>
+      <!-- Medium -->
+      <a href="https://medium.com/@web_65522" target="_blank" rel="noopener" aria-label="Medium">
+        <svg viewBox="0 0 24 24"><path d="M2.01 6.02c.02-.2-.05-.39-.18-.53L.23 3.51V3.2h5.63l4.35 9.54L14.04 3.2h5.38v.31l-1.37 1.31c-.12.09-.18.24-.15.39v13.58c-.03.15.03.3.15.39l1.34 1.31v.31h-6.75v-.31l1.39-1.34c.14-.14.14-.18.14-.39V7.79L10.3 20.42h-.52L4.98 7.79v9.06c-.04.28.05.56.23.77l1.8 2.18v.31H2v-.31l1.8-2.18c.18-.21.26-.49.21-.77V6.02z"/></svg>
+      </a>
+      <!-- Substack -->
+      <a href="https://substack.com/@gravitopennetworkfoundation" target="_blank" rel="noopener" aria-label="Substack">
+        <svg viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+      </a>
+    </div>
+
+    <div class="footer-origin">
+      <span>From</span>
+      <span class="flag-ch" aria-label="Switzerland"></span>
+      <span>to the rest of the world</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
