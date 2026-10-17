@@ -14,9 +14,9 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-LANGS = ["en", "es", "pt", "zh", "uk", "ru"]
+LANGS = ["en", "de", "fr", "it", "es", "pt", "tr", "uk", "ru", "zh"]
 HTML_LANG = {"zh": "zh-Hans"}
-SHORT = {"en": "EN", "es": "ES", "pt": "PT", "zh": "中文", "uk": "УКР", "ru": "РУС"}
+SHORT = {"en": "English", "de": "Deutsch", "fr": "Français", "it": "Italiano", "es": "Español", "pt": "Português", "tr": "Türkçe", "uk": "Українська", "ru": "Русский", "zh": "中文"}
 TAGCLS = {"verified": "t-ok", "secondary": "t-warn", "needs_review": "t-warn"}
 GH = "https://github.com/gravit-open-network-foundation/gravit-path"
 E = html.escape
@@ -52,10 +52,9 @@ def page(lang, sub, title, desc, nav, body):
     foot = (SITE / "_foot.html").read_text().replace("{{ROOT}}", root or "./")
     home = root + prefix(lang)
     items = "".join(f'<li><a href="{h}">{t}</a></li>' for t, h in nav)
-    langs = "".join(
-        (f'<b>{SHORT[l]}</b>' if l == lang else
-         f'<a href="{root}{prefix(l)}{sub}" onclick="try{{localStorage.setItem(\'gp-lang\',\'{l}\')}}catch(e){{}}">{SHORT[l]}</a>')
-        for l in LANGS)
+    opts = "".join(f'<option value="{root}{prefix(l)}{sub}" data-l="{l}"{" selected" if l == lang else ""}>{SHORT[l]}</option>' for l in LANGS)
+    langs = ('<select aria-label="Language" onchange="try{localStorage.setItem(\'gp-lang\',this.options[this.selectedIndex].dataset.l)}catch(e){};'
+             f'location.href=this.value">{opts}</select>')
     items += f'<li class="langs">{langs}</li>'
     header = f'''<div class="page">
   <header>
@@ -65,8 +64,9 @@ def page(lang, sub, title, desc, nav, body):
     </a>
     <nav aria-label="Main"><ul>{items}</ul></nav>
   </header>
-  <style>nav li.langs{{display:flex;gap:10px;margin-left:8px;padding-left:14px;border-left:1px solid rgba(100,180,255,.25)}}
-  nav li.langs a{{opacity:.6;text-decoration:none}} nav li.langs a:hover{{opacity:1}} nav li.langs b{{color:#4fc3f7}}</style>
+  <style>nav li.langs{{margin-left:8px;padding-left:14px;border-left:1px solid rgba(100,180,255,.25)}}
+  nav li.langs select{{background:transparent;color:inherit;border:1px solid rgba(100,180,255,.3);border-radius:8px;padding:4px 6px;font:inherit;cursor:pointer}}
+  nav li.langs option{{background:#0b1a33;color:#fff}}</style>
   <main><div class="gv">
 '''
     return head + header + body + "\n  </div></main>\n\n" + foot
