@@ -30,7 +30,7 @@ T = {
     ],
     "countries_h": "Paesi",
     "countries_lead": "Un paese va online solo quando ogni affermazione che lo riguarda è una regola con una fonte ufficiale datata. Prossimi: Germania, Estonia, Stati Uniti.",
-    "country_names": {"uk": "Regno Unito", "ch": "Svizzera"},
+    "country_names": {"uk": "Regno Unito", "ch": "Svizzera", "li": "Liechtenstein"},
     "country_card": "{n} regole, {v} verificate su fonti ufficiali.", "see_them": "Vedile",
     "rules_h": "Regole che puoi verificare da solo",
     "rules_lead": "L'assistente risponde solo con regole pubblicate: oggi {n}, di cui {v} verificate su fonti ufficiali. Ogni regola mostra la fonte, una citazione e la data in cui è stata letta. Quando non siamo sicuri, lo diciamo.",
@@ -58,7 +58,7 @@ T = {
     "partners_text": "Lavoriamo con professionisti abilitati: agenzie di costituzione, notai, avvocati, fiduciari e banche. Depositano dove la legge richiede una parte abilitata e danno consulenza sui singoli casi. Se sei uno di loro, scrivi a {mail}.",
     "status_h": "Stato onesto", "status_item": "Voce", "status_today": "Oggi",
     "status": [
-        ("Pacchetti di regole con fonti ufficiali", "ok", "SÌ", "{n} regole, {v} verificate, Regno Unito e Svizzera"),
+        ("Pacchetti di regole con fonti ufficiali", "ok", "SÌ", "{n} regole, {v} verificate, Regno Unito, Svizzera e Liechtenstein"),
         ("Principi", "ok", "SÌ", "{canon}"),
         ("Assistente (voce e testo)", "warn", "IN SVILUPPO", "il primo prototipo risponde solo con le regole"),
         ("Deposito a tuo nome", "bad", "NO", "solo tramite partner abilitati, quando ci saranno accordi"),

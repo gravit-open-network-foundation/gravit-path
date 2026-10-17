@@ -30,7 +30,7 @@ T = {
     ],
     "countries_h": "Ülkeler",
     "countries_lead": "Bir ülke, hakkındaki her ifade tarihli resmi kaynağı olan bir kurala dönüştüğünde yayına girer. Sıradakiler: Almanya, Estonya, Amerika Birleşik Devletleri.",
-    "country_names": {"uk": "Birleşik Krallık", "ch": "İsviçre"},
+    "country_names": {"uk": "Birleşik Krallık", "ch": "İsviçre", "li": "Lihtenştayn"},
     "country_card": "{n} kural, {v} tanesi resmi kaynaklarla doğrulandı.", "see_them": "Gör",
     "rules_h": "Kendiniz kontrol edebileceğiniz kurallar",
     "rules_lead": "Asistan yalnızca yayımlanmış kurallarla yanıt verir: bugün {n} kural, {v} tanesi resmi kaynaklarla doğrulandı. Her kural kaynağını, bir alıntıyı ve okunduğu tarihi gösterir. Emin olmadığımızda bunu söyleriz.",
@@ -58,7 +58,7 @@ T = {
     "partners_text": "Yetkili uzmanlarla çalışıyoruz: şirket kuruluş ajansları, noterler, avukatlar, muhasebeciler ve bankalar. Yasanın yetkili bir taraf istediği yerlerde başvuruyu onlar yapar ve tek tek durumlar için danışmanlık verirler. Siz de onlardan biriyseniz {mail} adresine yazın.",
     "status_h": "Dürüst durum", "status_item": "Konu", "status_today": "Bugün",
     "status": [
-        ("Resmi kaynaklı kural paketleri", "ok", "EVET", "{n} kural, {v} doğrulandı, Birleşik Krallık ve İsviçre"),
+        ("Resmi kaynaklı kural paketleri", "ok", "EVET", "{n} kural, {v} doğrulandı, Birleşik Krallık, İsviçre ve Lihtenştayn"),
         ("İlkeler", "ok", "EVET", "{canon}"),
         ("Asistan (ses ve metin)", "warn", "GELİŞTİRİLİYOR", "ilk prototip yalnızca kurallarla yanıt veriyor"),
         ("Sizin adınıza başvuru", "bad", "HAYIR", "yalnızca yetkili ortaklar aracılığıyla, anlaşmalar yapıldığında"),

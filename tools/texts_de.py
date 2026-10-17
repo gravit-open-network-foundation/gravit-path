@@ -30,7 +30,7 @@ T = {
     ],
     "countries_h": "Länder",
     "countries_lead": "Ein Land geht erst online, wenn jede Aussage darüber eine Regel mit datierter amtlicher Quelle ist. Als Nächstes: Deutschland, Estland, Vereinigte Staaten.",
-    "country_names": {"uk": "Vereinigtes Königreich", "ch": "Schweiz"},
+    "country_names": {"uk": "Vereinigtes Königreich", "ch": "Schweiz", "li": "Liechtenstein"},
     "country_card": "{n} Regeln, {v} anhand amtlicher Quellen geprüft.", "see_them": "Ansehen",
     "rules_h": "Regeln, die Sie selbst prüfen können",
     "rules_lead": "Der Assistent antwortet nur aus veröffentlichten Regeln: heute {n}, davon {v} anhand amtlicher Quellen geprüft. Jede Regel zeigt ihre Quelle, ein Zitat und das Lesedatum. Wenn wir unsicher sind, sagen wir es.",
@@ -58,7 +58,7 @@ T = {
     "partners_text": "Wir arbeiten mit zugelassenen Fachleuten: Gründungsdienstleistern, Notariaten, Anwälten, Treuhändern und Banken. Sie reichen ein, wo das Gesetz eine zugelassene Stelle verlangt, und beraten in Einzelfällen. Wenn Sie dazugehören, schreiben Sie an {mail}.",
     "status_h": "Ehrlicher Stand", "status_item": "Punkt", "status_today": "Heute",
     "status": [
-        ("Regelpakete mit amtlichen Quellen", "ok", "JA", "{n} Regeln, {v} geprüft, Vereinigtes Königreich und Schweiz"),
+        ("Regelpakete mit amtlichen Quellen", "ok", "JA", "{n} Regeln, {v} geprüft, Vereinigtes Königreich, Schweiz und Liechtenstein"),
         ("Grundsätze", "ok", "JA", "{canon}"),
         ("Assistent (Sprache und Text)", "warn", "IN ENTWICKLUNG", "der erste Prototyp antwortet nur aus den Regeln"),
         ("Einreichung in Ihrem Namen", "bad", "NEIN", "nur über zugelassene Partner, sobald Vereinbarungen bestehen"),

@@ -32,7 +32,7 @@ T = {
     ],
     "countries_h": "Countries",
     "countries_lead": "A country goes live only when every statement about it is a rule with a dated official source. Next: Germany, Estonia, United States.",
-    "country_names": {"uk": "United Kingdom", "ch": "Switzerland"},
+    "country_names": {"uk": "United Kingdom", "ch": "Switzerland", "li": "Liechtenstein"},
     "country_card": "{n} rules, {v} verified against official sources.", "see_them": "See them",
     "rules_h": "Rules you can check yourself",
     "rules_lead": "The assistant answers only from published rules: {n} today, {v} verified against official sources. Each rule shows its source, a quote and the date it was read. When we are not sure, we say so.",
@@ -60,7 +60,7 @@ T = {
     "partners_text": "We work with licensed professionals: formation agents, notaries, lawyers, accountants and banks. They file where the law requires a licensed party, and they give advice on individual cases. If you are one of them, write to {mail}.",
     "status_h": "Honest status", "status_item": "Item", "status_today": "Today",
     "status": [
-        ("Rule packs with official sources", "ok", "YES", "{n} rules, {v} verified, United Kingdom and Switzerland"),
+        ("Rule packs with official sources", "ok", "YES", "{n} rules, {v} verified, United Kingdom, Switzerland and Liechtenstein"),
         ("Canonical principles", "ok", "YES", "{canon}"),
         ("Assistant (voice and text)", "warn", "IN DEVELOPMENT", "first prototype answers only from the rules"),
         ("Filing on your behalf", "bad", "NO", "only through licensed partners, once agreements exist"),

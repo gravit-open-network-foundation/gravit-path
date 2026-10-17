@@ -30,7 +30,7 @@ T = {
     ],
     "countries_h": "Pays",
     "countries_lead": "Un pays n'est publié que lorsque chaque affirmation à son sujet est une règle avec une source officielle datée. Prochains : Allemagne, Estonie, États-Unis.",
-    "country_names": {"uk": "Royaume-Uni", "ch": "Suisse"},
+    "country_names": {"uk": "Royaume-Uni", "ch": "Suisse", "li": "Liechtenstein"},
     "country_card": "{n} règles, dont {v} vérifiées sur des sources officielles.", "see_them": "Les voir",
     "rules_h": "Des règles que vous pouvez vérifier vous-même",
     "rules_lead": "L'assistant ne répond qu'à partir de règles publiées : {n} aujourd'hui, dont {v} vérifiées sur des sources officielles. Chaque règle indique sa source, une citation et sa date de lecture. Quand nous ne sommes pas sûrs, nous le disons.",
@@ -58,7 +58,7 @@ T = {
     "partners_text": "Nous travaillons avec des professionnels agréés : agents de création d'entreprise, notaires, avocats, fiduciaires et banques. Ils déposent là où la loi exige une partie agréée et conseillent sur les cas individuels. Si vous en faites partie, écrivez à {mail}.",
     "status_h": "État honnête", "status_item": "Élément", "status_today": "Aujourd'hui",
     "status": [
-        ("Paquets de règles avec sources officielles", "ok", "OUI", "{n} règles, {v} vérifiées, Royaume-Uni et Suisse"),
+        ("Paquets de règles avec sources officielles", "ok", "OUI", "{n} règles, {v} vérifiées, Royaume-Uni, Suisse et Liechtenstein"),
         ("Principes", "ok", "OUI", "{canon}"),
         ("Assistant (voix et texte)", "warn", "EN DÉVELOPPEMENT", "le premier prototype ne répond qu'à partir des règles"),
         ("Dépôt en votre nom", "bad", "NON", "uniquement via des partenaires agréés, une fois les accords conclus"),

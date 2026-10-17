@@ -30,7 +30,7 @@ T = {
     ],
     "countries_h": "Países",
     "countries_lead": "Un país se publica solo cuando cada afirmación sobre él es una regla con una fuente oficial fechada. Próximos: Alemania, Estonia, Estados Unidos.",
-    "country_names": {"uk": "Reino Unido", "ch": "Suiza"},
+    "country_names": {"uk": "Reino Unido", "ch": "Suiza", "li": "Liechtenstein"},
     "country_card": "{n} reglas, {v} verificadas con fuentes oficiales.", "see_them": "Verlas",
     "rules_h": "Reglas que puedes comprobar tú mismo",
     "rules_lead": "El asistente responde solo con reglas publicadas: hoy {n}, de ellas {v} verificadas con fuentes oficiales. Cada regla muestra su fuente, una cita y la fecha en que se leyó. Cuando no estamos seguros, lo decimos.",
@@ -58,7 +58,7 @@ T = {
     "partners_text": "Trabajamos con profesionales con licencia: gestorías de constitución, notarios, abogados, contables y bancos. Presentan donde la ley exige una parte con licencia y asesoran en casos concretos. Si eres uno de ellos, escribe a {mail}.",
     "status_h": "Estado sincero", "status_item": "Elemento", "status_today": "Hoy",
     "status": [
-        ("Paquetes de reglas con fuentes oficiales", "ok", "SÍ", "{n} reglas, {v} verificadas, Reino Unido y Suiza"),
+        ("Paquetes de reglas con fuentes oficiales", "ok", "SÍ", "{n} reglas, {v} verificadas, Reino Unido, Suiza y Liechtenstein"),
         ("Principios canónicos", "ok", "SÍ", "{canon}"),
         ("Asistente (voz y texto)", "warn", "EN DESARROLLO", "el primer prototipo responde solo con las reglas"),
         ("Presentación en tu nombre", "bad", "NO", "solo mediante socios con licencia, cuando haya acuerdos"),
