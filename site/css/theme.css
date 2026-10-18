@@ -1,0 +1,46 @@
+/* Gravit light mode: overrides for the shared Gravit site styles.
+   Active when <html data-theme="light">; dark stays the default. */
+html[data-theme="light"] {
+  --bg: #f4f7fb; --bg2: #e9eff7; --blue-glow: #0a6fb8;
+  --text: #0b1a2e; --text-body: rgba(11, 26, 46, 0.86); --muted: rgba(11, 26, 46, 0.62);
+  --card-bg: rgba(255, 255, 255, 0.88); --card-border: rgba(10, 80, 150, 0.18);
+  --accent: #0a62a8; --glow: none; --glow-strong: none;
+  color-scheme: light;
+}
+html[data-theme="light"] body::before {
+  background: radial-gradient(ellipse 80% 60% at 50% 55%, rgba(0, 120, 220, 0.08) 0%, transparent 70%), var(--bg);
+}
+html[data-theme="light"] .orbital-bg svg { opacity: 0.12; filter: invert(1) hue-rotate(180deg); }
+html[data-theme="light"] nav a:hover, html[data-theme="light"] nav a[aria-current="page"],
+html[data-theme="light"] .repo-name, html[data-theme="light"] .footer-socials a:hover { color: var(--text); }
+html[data-theme="light"] .card-center { background: rgba(255, 255, 255, 0.95); border-color: rgba(10, 80, 150, 0.25);
+  box-shadow: 0 0 0 1px rgba(10, 80, 150, 0.12), 0 18px 50px rgba(10, 40, 80, 0.15); }
+html[data-theme="light"] .card::after { mix-blend-mode: normal; }
+html[data-theme="light"] .content blockquote { color: var(--text-body); }
+html[data-theme="light"] * { text-shadow: none !important; }
+/* verifier page block */
+html[data-theme="light"] .gv { --card: rgba(255, 255, 255, 0.9); --line: rgba(10, 80, 150, 0.18); --muted: rgba(11, 26, 46, 0.66);
+  --glow: #0a62a8; --glow-soft: rgba(10, 98, 168, 0.1); --ok: #0f766e; --warn: #a16207; --bad: #b91c1c; }
+html[data-theme="light"] .gv .btn1 { color: #fff; }
+html[data-theme="light"] .gv pre { background: #0b1a2e; color: #e8f4ff; }
+/* the switch */
+.theme-toggle { position: fixed; right: 18px; bottom: 18px; z-index: 50; background: var(--card-bg);
+  border: 1px solid var(--card-border); color: var(--text); border-radius: 999px; width: 44px; height: 44px;
+  display: inline-flex; align-items: center; justify-content: center; cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25); backdrop-filter: blur(6px); }
+.theme-toggle:hover { border-color: var(--accent); }
+.theme-toggle svg { width: 20px; height: 20px; }
+html[data-theme="light"] .logo { color: var(--text); }
+html[data-theme="light"] nav a, html[data-theme="light"] .footer-socials a, html[data-theme="light"] .footer-links a { color: rgba(11, 26, 46, 0.66); }
+html[data-theme="light"] nav a:hover, html[data-theme="light"] nav a[aria-current="page"] { color: var(--accent); }
+html[data-theme="light"] .repo-status, html[data-theme="light"] .repo-meta { color: var(--text-body); }
+html[data-theme="light"] .content .eyebrow { color: var(--accent); }
+/* Foundation site */
+html[data-theme="light"] .hero p, html[data-theme="light"] .facts dd { color: var(--text-body); }
+html[data-theme="light"] .person .name, html[data-theme="light"] .entries .title,
+html[data-theme="light"] .principle-lead, html[data-theme="light"] .principle-truth { color: var(--text); }
+html[data-theme="light"] .person .initials { color: var(--accent); }
+html[data-theme="light"] .entries .date { color: var(--accent); }
+html[data-theme="light"] .statute h3 { color: var(--text); }
+html[data-theme="light"] .lang-switch a { color: rgba(11, 26, 46, 0.55); }
+html[data-theme="light"] .lang-switch a[aria-current], html[data-theme="light"] .lang-switch a:hover { color: var(--accent); }
