@@ -76,4 +76,7 @@ T = {
     "rp_source": "Quelle",
     "rp_versions_h": "Versionen",
     "rp_versions": "Jedes Paket hat einen Fingerabdruck, damit eine Antwort die genaue Version der verwendeten Regeln nennen kann. Die Quelldateien liegen auf {gh}.",
+    "sec_h": 'Ihre Unterlagen, für Jahrzehnte',
+    "sec_p": 'Ihr Weg soll über Jahre prüfbar bleiben. Jeder Schritt wird mit den offenen Standards des Gravit Verifier signiert und mit Zeitstempeln versehen (Ed25519, RFC 3161, RFC 9162), und wir ergänzen die postquantensicheren Signaturen des NIST (FIPS 204 und FIPS 205). Diese Website nutzt bereits einen postquantensicheren Schlüsselaustausch (ML-KEM, NIST FIPS 203). Dies ist keine Zertifizierung, und wir sind mit dem NIST nicht verbunden.',
+    "sec_link": 'Sicherheit und Standards',
 }

@@ -76,4 +76,7 @@ T = {
     "rp_source": "kaynak",
     "rp_versions_h": "Sürümler",
     "rp_versions": "Her paketin bir parmak izi vardır; böylece bir yanıt kullandığı kuralların tam sürümünü belirtebilir. Kaynak dosyalar {gh} üzerindedir.",
+    "sec_h": 'Belgeleriniz, onlarca yıl',
+    "sec_p": "Yolunuz yıllarca doğrulanabilir kalacak şekilde tasarlandı. Her adım Gravit Verifier'ın açık standartlarıyla imzalanacak ve zaman damgası alacak (Ed25519, RFC 3161, RFC 9162); NIST'in kuantum sonrası imzalarını da ekliyoruz (FIPS 204 ve FIPS 205). Bu site zaten kuantum sonrası anahtar değişimi kullanıyor (ML-KEM, NIST FIPS 203). Bu bir sertifika değildir ve NIST ile bağlantımız yoktur.",
+    "sec_link": 'Güvenlik ve standartlar',
 }

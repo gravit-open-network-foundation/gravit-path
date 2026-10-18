@@ -116,6 +116,7 @@ def index(p, T, lang):
   <p style="margin-top:16px"><a class="btn btn2" href="rules/">{E(f(T["all_rules"]))}</a></p></section>
 <section id="principles"><h2>{E(T["principles_h"])}</h2><div class="grid">{princ}</div></section>
 <section id="trust"><h2>{E(T["trust_h"])}</h2><p class="muted">{E(T["trust_lead"])}</p><div class="grid">{trust}</div></section>
+<section id="security"><h2>{E(T["sec_h"])}</h2><p>{E(T["sec_p"])} <a href="https://gravitverifier.space/#standards">{E(T["sec_link"])}</a></p></section>
 <section id="plans"><h2>{E(T["plans_h"])} <span class="tag t-plan" style="vertical-align:middle">{E(T["preview"])}</span></h2>
   <div class="plans" style="grid-template-columns:repeat(2,1fr)">
     <div class="plan"><h3>{E(pp[0])}</h3><div class="price">{E(pp[1])}</div><ul>{ul(pp[2])}</ul></div>

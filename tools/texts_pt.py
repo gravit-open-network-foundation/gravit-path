@@ -76,4 +76,7 @@ T = {
     "rp_source": "fonte",
     "rp_versions_h": "Versões",
     "rp_versions": "Cada pacote tem uma impressão digital, para que uma resposta possa indicar a versão exata das regras que usou. Os ficheiros de origem estão no {gh}.",
+    "sec_h": 'Os seus documentos, por décadas',
+    "sec_p": 'O seu caminho foi pensado para continuar verificável durante anos. Cada passo será assinado e marcado no tempo com as normas abertas do Gravit Verifier (Ed25519, RFC 3161, RFC 9162), e estamos a acrescentar as assinaturas pós-quânticas do NIST (FIPS 204 e FIPS 205). Este site já usa troca de chaves pós-quântica (ML-KEM, NIST FIPS 203). Não é uma certificação e não estamos associados ao NIST.',
+    "sec_link": 'Segurança e normas',
 }

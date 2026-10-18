@@ -78,4 +78,7 @@ T = {
     "rp_source": "source",
     "rp_versions_h": "Versions",
     "rp_versions": "Each pack has a fingerprint, so an answer can name the exact version of the rules it used. The source files are on {gh}.",
+    "sec_h": 'Your records, for decades',
+    "sec_p": "Your path is built to stay checkable for years. Each step will be signed and time stamped with the open standards behind the Gravit Verifier (Ed25519, RFC 3161, RFC 9162), and we are adding NIST's post quantum signatures (FIPS 204 and FIPS 205). This site already uses post quantum key exchange (ML-KEM, NIST FIPS 203). This is not a certification, and we are not affiliated with NIST.",
+    "sec_link": 'Security and standards',
 }
