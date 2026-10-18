@@ -76,4 +76,7 @@ T = {
     "rp_source": "fuente",
     "rp_versions_h": "Versiones",
     "rp_versions": "Cada paquete tiene una huella, así una respuesta puede nombrar la versión exacta de las reglas que usó. Los archivos fuente están en {gh}.",
+    "sec_h": 'Sus documentos, durante décadas',
+    "sec_p": 'Su camino está pensado para seguir siendo verificable durante años. Cada paso se firmará y sellará en el tiempo con los estándares abiertos del Gravit Verifier (Ed25519, RFC 3161, RFC 9162), y estamos añadiendo las firmas poscuánticas del NIST (FIPS 204 y FIPS 205). Este sitio ya usa intercambio de claves poscuántico (ML-KEM, NIST FIPS 203). No es una certificación y no estamos afiliados al NIST.',
+    "sec_link": 'Seguridad y estándares',
 }
