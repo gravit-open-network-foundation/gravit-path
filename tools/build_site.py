@@ -14,9 +14,9 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-LANGS = ["en", "de", "fr", "it", "es", "pt", "tr", "uk", "ru", "zh"]
+LANGS = ["en", "de", "fr", "it", "es", "pt", "tr", "uk", "ru", "zh", "ja"]
 HTML_LANG = {"zh": "zh-Hans"}
-SHORT = {"en": "English", "de": "Deutsch", "fr": "Français", "it": "Italiano", "es": "Español", "pt": "Português", "tr": "Türkçe", "uk": "Українська", "ru": "Русский", "zh": "中文"}
+SHORT = {"en": "English", "de": "Deutsch", "fr": "Français", "it": "Italiano", "es": "Español", "pt": "Português", "tr": "Türkçe", "uk": "Українська", "ru": "Русский", "zh": "中文", "ja": "日本語"}
 TAGCLS = {"verified": "t-ok", "secondary": "t-warn", "needs_review": "t-warn"}
 GH = "https://github.com/gravit-open-network-foundation/gravit-path"
 E = html.escape
