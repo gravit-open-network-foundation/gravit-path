@@ -94,7 +94,7 @@ def index(p, T, lang):
     trust = "".join(f'<div class="card"><h3>{E(a)}</h3><p>{E(b)} <a href="{u}">{E(c)}</a></p></div>' for (a, b, c), u in zip(T["trust"], links))
     ul = lambda xs: "".join(f"<li>{E(x)}</li>" for x in xs)  # noqa: E731
     pp, pr = T["plan_people"], T["plan_pro"]
-    mail = '<a href="mailto:web@gravit.world">web@gravit.world</a>'
+    mail = '<a href="/contact/">gravitpath.world/contact</a>'
     canon = f'<a href="{GH}/blob/main/CANON.md">CANON.md</a>'
     tcls = {"ok": "t-ok", "warn": "t-warn", "bad": "t-bad", "plan": "t-plan"}
     status = "".join(f'<tr><td>{E(a)}</td><td><span class="tag {tcls[c]}">{E(t)}</span> '
