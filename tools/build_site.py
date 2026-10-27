@@ -21,7 +21,8 @@ TAGCLS = {"verified": "t-ok", "secondary": "t-warn", "needs_review": "t-warn"}
 GH = "https://github.com/gravit-open-network-foundation/gravit-path"
 # Partners who agreed to be named; names exactly as on their own sites.
 PARTNERS = [("Rapid Formations", "https://www.rapidformations.co.uk", "UK"),
-            ("1stchoice Formations", "https://www.1stchoice-formations.co.uk", "UK")]
+            ("1stchoice Formations", "https://www.1stchoice-formations.co.uk", "UK"),
+            ("Greater Zurich Area", "https://www.greaterzuricharea.com", "CH")]
 E = html.escape
 
 # Sends a first-time visitor to the language of their browser, if we have it. No cookies, no tracking:
