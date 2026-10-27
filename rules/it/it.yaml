@@ -1,0 +1,46 @@
+# Italy. Retrieved 2026-10-27 from the Consiglio Nazionale del Notariato, the national public body of Italian notaries
+# (notariato.it). The Civil Code articles named are the legal basis; their text on normattiva.it is still to be quoted.
+# status: verified = stated on the official page quoted; secondary = from non-official sources, confirm before use;
+#         needs_review = expected but not yet confirmed from an official source.
+- id: IT-SRL-001
+  form: S.r.l.
+  statement: The share capital of an S.r.l. may be lower than EUR 10,000, down to EUR 1 (art. 2463 Civil Code).
+  quote: "The share capital of an “s.r.l.” may be lower than Euro 10,000."
+  source: https://www.notariato.it/en/impresa/societa-a-responsabilita-limitata/
+  status: verified
+- id: IT-SRL-002
+  form: S.r.l.
+  statement: With share capital of EUR 10,000 or more, at least 25 % of the cash contributions and all contributions in kind are paid at signing; the rest of the capital can be paid later.
+  quote: "at least 25% of the consideration must be paid in cash (the rest of the capital can be paid up later) as well as the full amount of contributions in kind."
+  source: https://www.notariato.it/en/impresa/societa-a-responsabilita-limitata/
+  status: verified
+- id: IT-SRL-003
+  form: S.r.l.
+  statement: With share capital below EUR 10,000 (at least EUR 1), contributions may be in cash only and must be paid in full on subscription.
+  quote: "When the amount of capital is, however, set at less than €10,000, but not less than one euro, contributions may be in cash only and must be fully paid upon subscription."
+  source: https://www.notariato.it/en/impresa/societa-a-responsabilita-limitata/
+  status: verified
+- id: IT-SRL-004
+  form: S.r.l.
+  statement: The articles are made as a public deed by a notary, who files them with the Register of Companies; the company comes into existence only on registration.
+  quote: "only following registration with the competent Company Registry can the limited liability company be said to have actually come into existence."
+  source: https://www.notariato.it/en/impresa/societa-a-responsabilita-limitata/
+  status: verified
+- id: IT-SRLS-001
+  form: S.r.l. semplificata
+  statement: A simplified S.r.l. can be formed by individuals of any age, not by companies; a single shareholder is possible (art. 2463-bis Civil Code).
+  quote: "It applies to business persons with no age limit, but the shareholders of an “S.r.l.s.” may only be individuals, not companies or other bodies."
+  source: https://www.notariato.it/en/impresa/societa-responsabilita-limitata-semplificata/
+  status: verified
+- id: IT-SRLS-002
+  form: S.r.l. semplificata
+  statement: Its share capital is between EUR 1 and EUR 9,999.99, paid in full in cash when the company is set up.
+  quote: "there is a minimum share capital of one euro and a maximum of €9,999.99 . The capital must be fully paid in cash to the administrative body at the time the company is set up."
+  source: https://www.notariato.it/en/impresa/societa-responsabilita-limitata-semplificata/
+  status: verified
+- id: IT-SRLS-003
+  form: S.r.l. semplificata
+  statement: The articles follow a standard model prescribed by law that cannot be changed, drawn up as a public deed by a notary; no notarial fees are payable.
+  quote: "The articles of association must be drawn up as a public deed by a notary in accordance with a standard model prescribed by law that cannot be changed"
+  source: https://www.notariato.it/en/impresa/societa-responsabilita-limitata-semplificata/
+  status: verified

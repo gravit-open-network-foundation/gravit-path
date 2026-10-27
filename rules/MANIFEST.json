@@ -4,10 +4,25 @@
   "sha256": "220c26fe5c7a582fc5b164bcc13ad2e6f6af73d75da569e5b76ccea24f743821",
   "verified": 6
  },
+ "rules/de/de.yaml": {
+  "rules": 9,
+  "sha256": "5d70304243696c17ddb2712ea54149455787a4032b2650ea615ec0142dc6c0cd",
+  "verified": 9
+ },
+ "rules/it/it.yaml": {
+  "rules": 7,
+  "sha256": "08e73f2e5327ef88622d98959200772788a9eedbcfe18ecf8600076fb5654c5b",
+  "verified": 7
+ },
  "rules/li/li.yaml": {
   "rules": 9,
   "sha256": "0e738764265ffe1d4e6a5885974a16e02ad988c5220ed4f84af66c77c6cc2198",
   "verified": 6
+ },
+ "rules/sg/sg.yaml": {
+  "rules": 8,
+  "sha256": "6432f8f55ff2b0fd44c8c2777bca0a8822a74503aad143e3fd7e6930d86d1268",
+  "verified": 8
  },
  "rules/uk/uk.yaml": {
   "rules": 10,
