@@ -19,6 +19,10 @@ HTML_LANG = {"zh": "zh-Hans"}
 SHORT = {"en": "English", "de": "Deutsch", "fr": "Français", "it": "Italiano", "es": "Español", "pt": "Português", "tr": "Türkçe", "uk": "Українська", "ru": "Русский", "zh": "中文", "ja": "日本語"}
 TAGCLS = {"verified": "t-ok", "secondary": "t-warn", "needs_review": "t-warn"}
 GH = "https://github.com/gravit-open-network-foundation/gravit-path"
+# Partners who agreed to be named; names exactly as on their own sites.
+PARTNERS = [("Rapid Formations", "https://www.rapidformations.co.uk", "UK"),
+            ("1stchoice Formations", "https://www.1stchoice-formations.co.uk", "UK"),
+            ("Greater Zurich Area", "https://www.greaterzuricharea.com", "CH")]
 E = html.escape
 
 # Sends a first-time visitor to the language of their browser, if we have it. No cookies, no tracking:
@@ -122,7 +126,8 @@ def index(p, T, lang):
     <div class="plan"><h3>{E(pp[0])}</h3><div class="price">{E(pp[1])}</div><ul>{ul(pp[2])}</ul></div>
     <div class="plan" style="border-color:var(--glow)"><h3>{E(pr[0])}</h3><div class="price">{E(pr[1])}</div><ul>{ul(pr[2])}</ul></div>
   </div></section>
-<section id="partners"><h2>{E(T["partners_h"])}</h2><p class="muted">{E(T["partners_text"]).replace("{mail}", mail)}</p></section>
+<section id="partners"><h2>{E(T["partners_h"])}</h2><p class="muted">{E(T["partners_text"]).replace("{mail}", mail)}</p>
+  <ul class="partners">{"".join(f'<li><a href="{u}" rel="noopener">{E(n)}</a> <span class="muted">{c}</span></li>' for n, u, c in PARTNERS)}</ul></section>
 <section id="status"><h2>{E(T["status_h"])}</h2>
   <div class="tablewrap"><table><tr><th>{E(T["status_item"])}</th><th>{E(T["status_today"])}</th></tr>{status}</table></div>
   <div class="notice">{E(T["notice"])}</div></section>

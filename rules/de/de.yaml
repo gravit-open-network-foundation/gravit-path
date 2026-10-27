@@ -1,0 +1,56 @@
+# Germany. Retrieved 2026-10-27 from the law texts published by the Federal Ministry of Justice (gesetze-im-internet.de).
+# status: verified = stated in the official text quoted; secondary = from non-official sources, confirm before use;
+#         needs_review = expected but not yet confirmed from an official source.
+- id: DE-GMBH-001
+  form: GmbH
+  statement: The minimum share capital (Stammkapital) of a GmbH is EUR 25,000 (§ 5 (1) GmbHG).
+  quote: "Das Stammkapital der Gesellschaft muß mindestens fünfundzwanzigtausend Euro betragen."
+  source: https://www.gesetze-im-internet.de/gmbhg/__5.html
+  status: verified
+- id: DE-GMBH-002
+  form: GmbH
+  statement: The articles of association must be notarised (§ 2 (1) GmbHG).
+  quote: "Der Gesellschaftsvertrag bedarf notarieller Form."
+  source: https://www.gesetze-im-internet.de/gmbhg/__2.html
+  status: verified
+- id: DE-GMBH-003
+  form: GmbH
+  statement: A GmbH with at most three shareholders and one managing director can be founded in a simplified procedure with the statutory model protocol (Musterprotokoll) (§ 2 (1a) GmbHG).
+  quote: "Die Gesellschaft kann in einem vereinfachten Verfahren gegründet werden."
+  source: https://www.gesetze-im-internet.de/gmbhg/__2.html
+  status: verified
+- id: DE-GMBH-004
+  form: GmbH
+  statement: Before registration, at least half of the minimum share capital, that is EUR 12,500, must be paid in (§ 7 (2) GmbHG).
+  quote: "Insgesamt muß auf das Stammkapital mindestens soviel eingezahlt sein"
+  source: https://www.gesetze-im-internet.de/gmbhg/__7.html
+  status: verified
+- id: DE-GMBH-005
+  form: GmbH
+  statement: The GmbH exists as such only from its entry in the commercial register; whoever acts in its name before registration is personally and jointly liable (§ 11 GmbHG).
+  quote: "Ist vor der Eintragung im Namen der Gesellschaft gehandelt worden, so haften die Handelnden persönlich und solidarisch."
+  source: https://www.gesetze-im-internet.de/gmbhg/__11.html
+  status: verified
+- id: DE-UG-001
+  form: UG (haftungsbeschränkt)
+  statement: A company with less than EUR 25,000 share capital must carry the name "Unternehmergesellschaft (haftungsbeschränkt)" or "UG (haftungsbeschränkt)" (§ 5a (1) GmbHG).
+  source: https://www.gesetze-im-internet.de/gmbhg/__5a.html
+  status: verified
+- id: DE-UG-002
+  form: UG (haftungsbeschränkt)
+  statement: A UG may be registered only once its share capital is paid in full; contributions in kind are excluded (§ 5a (2) GmbHG).
+  quote: "Abweichend von § 7 Abs. 2 darf die Anmeldung erst erfolgen, wenn das Stammkapital in voller Höhe eingezahlt ist. Sacheinlagen sind ausgeschlossen."
+  source: https://www.gesetze-im-internet.de/gmbhg/__5a.html
+  status: verified
+- id: DE-UG-003
+  form: UG (haftungsbeschränkt)
+  statement: A UG must set aside one quarter of its annual profit (after losses carried forward) in a statutory reserve (§ 5a (3) GmbHG).
+  quote: "ein Viertel des um einen Verlustvortrag aus dem Vorjahr geminderten Jahresüberschusses einzustellen ist"
+  source: https://www.gesetze-im-internet.de/gmbhg/__5a.html
+  status: verified
+- id: DE-GEW-001
+  form: all trades
+  statement: Whoever starts an independent business at a fixed location, a branch or a dependent branch office must notify the competent authority at the same time (§ 14 (1) GewO, Gewerbeanmeldung).
+  quote: "muss dies der zuständigen Behörde gleichzeitig anzeigen."
+  source: https://www.gesetze-im-internet.de/gewo/__14.html
+  status: verified

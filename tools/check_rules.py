@@ -2,7 +2,7 @@
 """Check the rule packs and write rules/MANIFEST.json.
 
 Every rule needs id, form, statement, source and status. A rule marked verified must cite an official
-source (government, federal or cantonal authority, or the law text). The manifest lists each pack with
+source (government, federal or cantonal authority, a public body named in OFFICIAL, or the law text). The manifest lists each pack with
 its SHA-256 so that a pack can later be signed and anchored with History Keeper: an answer can then name
 exactly which version of the rules it used.
 """
@@ -14,7 +14,9 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-OFFICIAL = ("gov.uk", "admin.ch", "fedlex.admin.ch", "zh.ch", "be.ch", "sg.ch", "legislation.gov.uk", "gesetze.li", "llv.li")
+OFFICIAL = ("gov.uk", "admin.ch", "fedlex.admin.ch", "zh.ch", "be.ch", "sg.ch", "legislation.gov.uk", "gesetze.li", "llv.li",
+            "gesetze-im-internet.de", "acra.gov.sg",
+            "notariato.it")  # Consiglio Nazionale del Notariato: the national public body of Italian notaries
 STATUSES = {"verified", "secondary", "needs_review"}
 REQUIRED = ("id", "form", "statement", "source", "status")
 

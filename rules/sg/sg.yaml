@@ -1,0 +1,53 @@
+# Singapore. Retrieved 2026-10-27 from the Accounting and Corporate Regulatory Authority (acra.gov.sg).
+# status: verified = stated on the official page quoted; secondary = from non-official sources, confirm before use;
+#         needs_review = expected but not yet confirmed from an official source.
+- id: SG-PTE-001
+  form: private company limited by shares
+  statement: Every company must have at least one director and one company secretary.
+  quote: "Every company must have at least one company director and one company secretary."
+  source: https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/
+  status: verified
+- id: SG-PTE-002
+  form: private company limited by shares
+  statement: ACRA lists as director requirements under the Companies Act that a director is ordinarily resident, at least 18 years old, and a Singapore citizen, permanent resident or someone who meets the local residency rules.
+  quote: "Be ordinarily resident"
+  source: https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/
+  status: verified
+  note: The Companies Act (s 145) requires at least one director ordinarily resident in Singapore; its text on sso.agc.gov.sg is still to be quoted.
+- id: SG-PTE-003
+  form: private company limited by shares
+  statement: A company secretary must be appointed within six months of registration, and the position cannot stay empty for more than six months; a sole director cannot also be the secretary.
+  quote: "A secretary must be appointed within six months of successful registration."
+  source: https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/
+  status: verified
+- id: SG-PTE-004
+  form: private company limited by shares
+  statement: Unless exempt, an auditor must be appointed within three months of incorporation.
+  quote: "Unless exempt, you must appoint an auditor within three months of incorporation."
+  source: https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/appointing-company-directors-other-key-officers/
+  status: verified
+- id: SG-PTE-005
+  form: private company limited by shares
+  statement: The registered office must be a Singapore address, open and accessible to the public during normal business hours on each business day.
+  quote: "Must be open and accessible to the public during normal business hours on each business day."
+  source: https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/
+  status: verified
+- id: SG-PTE-006
+  form: private company limited by shares
+  statement: At least one share must be issued; the company can adopt the model constitution or upload its own.
+  quote: "The minimum number of issued shares is one."
+  source: https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/
+  status: verified
+- id: SG-PTE-007
+  form: private company limited by shares
+  statement: The registration fee is SGD 300, paid on Bizfile; the name application fee is separate.
+  quote: "$300"
+  source: https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/
+  status: verified
+  note: The name application fee is not stated on this page; confirm on Bizfile before quoting a total.
+- id: SG-ID-001
+  form: all businesses
+  statement: Every business must have at least one local resident in Singapore (citizen, permanent resident or holder of a qualifying pass).
+  quote: "Every business must have at least one local resident in Singapore."
+  source: https://www.acra.gov.sg/how-to-guides/foreigners-registering-a-business-in-singapore/requirements-for-local-residency
+  status: verified
